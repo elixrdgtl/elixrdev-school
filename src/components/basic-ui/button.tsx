@@ -18,6 +18,6 @@ export default function ExButton(props:ButtonProps){
         2:"bg-red-500 hover:bg-red-600 text-white"
     }
     return(
-        <button className={`transition p-2 px-4 mt-2 mx-0.5 rounded-2xl active:translate-y-1 ${type[props.buttonType]}`} {...props}>{props.children}</button>
+        <button className={`transition w-fit p-2 px-4 mt-2 mx-0.5 rounded-2xl active:translate-y-1 ${type[props.buttonType]}`} {...props}>{props.children}</button>
     )
 }

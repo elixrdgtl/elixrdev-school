@@ -23,9 +23,9 @@ export default function HeaderMenu(P: HeaderMenu) {
             <div className="p-4">
                 <ul className="p-4 flex flex-col gap-6">
                     {
-                        ["Home","Profile","Activities","Logout"].map((item,key) => {
+                        ["Register"].map((item,key) => {
                           return(
-                            <ExHeaderItem item={item} href={item}/>
+                            <ExHeaderItem key={key} item={item} href={item.toLowerCase()}/>
                           )
                         })
                     }
