@@ -8,7 +8,7 @@ export default function Header(){
     const [showMenu,setShowMenu] = useState(false)
     return (
         <header>
-            <div className="fixed flex flex-row w-full h-12 bg-red-500 justify-between p-3">
+            <div className="fixed top-0 flex flex-row w-full h-12 bg-red-500 justify-between p-3">
                 <MenuBurger onClick={()=>{setShowMenu(val=>true)}}/>
                 <MenuAvatar/>
             </div>

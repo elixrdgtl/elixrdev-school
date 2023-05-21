@@ -18,11 +18,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <main className="w-full h-screen">
-          <Header />
           <div className="px-12 py-24">
             {children}
           </div>
         </main>
+        <Header />
       </body>
     </html>
   )

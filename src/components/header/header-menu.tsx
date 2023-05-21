@@ -1,21 +1,36 @@
 'use client'
 
 import { Dispatch, useState } from "react"
+import ExButton, { ButtonType } from "../basic-ui/button"
+import ExHeaderItem from "./header-menu-item"
 
 export interface HeaderMenu {
-    show:boolean,
-    setShow:Dispatch<React.SetStateAction<boolean>>
+    show: boolean,
+    setShow: Dispatch<React.SetStateAction<boolean>>
 }
 
-export default function HeaderMenu(P:HeaderMenu) {
+export default function HeaderMenu(P: HeaderMenu) {
     return (
         <div className={`
-            z-1000 transition transform fixed bg-green-500 w-72 h-screen
-            ${P.show?"":"-translate-x-72"}
+            transition transform fixed top-0 bg-gray-300 drop-shadow-xl w-72 h-screen
+            ${P.show ? "" : "-translate-x-72"}
         `}>
-            <button onClick={() => { P.setShow(val => false) }}>
-                x
-            </button>
+            <div className="p-4">
+                <ExButton buttonType={ButtonType.WARNING} onClick={() => { P.setShow(val => false) }}>
+                    {"< Close"}
+                </ExButton>
+            </div>
+            <div className="p-4">
+                <ul className="p-4 flex flex-col gap-6">
+                    {
+                        ["Home","Profile","Activities","Logout"].map((item,key) => {
+                          return(
+                            <ExHeaderItem item={item} href={item}/>
+                          )
+                        })
+                    }
+                </ul>
+            </div>
         </div>
     )
 }
