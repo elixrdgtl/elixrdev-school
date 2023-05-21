@@ -1,4 +1,5 @@
 import { MouseEventHandler } from "react";
+import ExButton, { ButtonType } from "../basic-ui/button";
 
 export interface MenuBurger {
     onClick: MouseEventHandler<HTMLButtonElement>
@@ -6,8 +7,8 @@ export interface MenuBurger {
 
 export default function MenuBurger(P:MenuBurger) {
     return (
-        <button onClick={P.onClick}>
-            =
-        </button>
+        <ExButton buttonType={ButtonType.DEFAULT} onClick={P.onClick}>
+            = Menu
+        </ExButton>
     )
 }
