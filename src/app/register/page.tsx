@@ -3,14 +3,7 @@
 import ExButton, { ButtonType } from "@/components/basic-ui/button";
 import ExPanel from "@/components/basic-ui/panel";
 import { Formik, Form, Field } from "formik";
-
-interface IRegisterValues {
-    username: string,
-    email?: string
-    password: string,
-    name: string,
-    misc: any
-}
+import { IRegisterValues } from "@/db/models/user";
 
 export default function Register() {
 
@@ -22,7 +15,7 @@ export default function Register() {
     return (
         <div>
             <div className="flex w-full justify-center items-center">
-                <ExPanel classNameExtra="w-full sm:w-fit" title="Register"> 
+                <ExPanel extraclassname="w-full sm:w-fit" title="Register"> 
                     <Formik
                         initialValues={init}
                         onSubmit={(values) => {
@@ -48,7 +41,7 @@ export default function Register() {
                                     <Field required className={fieldClass} type="text" name="name" />
                                 </div>
                             </div>
-                            <ExButton buttonType={ButtonType.OK} type="submit"> Submit </ExButton>
+                            <ExButton buttontype={ButtonType.OK} type="submit"> Submit </ExButton>
                         </Form>
                     </Formik>
                 </ExPanel>

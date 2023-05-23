@@ -7,7 +7,7 @@ export interface MenuBurger {
 
 export default function MenuBurger(P:MenuBurger) {
     return (
-        <ExButton buttonType={ButtonType.DEFAULT} onClick={P.onClick}>
+        <ExButton buttontype={ButtonType.DEFAULT} onClick={P.onClick}>
             = Menu
         </ExButton>
     )

@@ -16,7 +16,7 @@ export default function HeaderMenu(P: HeaderMenu) {
             ${P.show ? "" : "-translate-x-72"}
         `}>
             <div className="p-4">
-                <ExButton buttonType={ButtonType.WARNING} onClick={() => { P.setShow(val => false) }}>
+                <ExButton buttontype={ButtonType.WARNING} onClick={() => { P.setShow(val => false) }}>
                     {"< Close"}
                 </ExButton>
             </div>
@@ -26,6 +26,7 @@ export default function HeaderMenu(P: HeaderMenu) {
                         [
                             {label:"Home",href:"/"},
                             {label:"Register",href:"register"},
+                            {label:"Blog",href:"blog"},
                         ].map((item,key) => {
                           return(
                             <ExHeaderItem key={key} item={item.label} href={item.href}/>
