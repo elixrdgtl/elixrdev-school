@@ -1,5 +1,5 @@
 import { DATE, DataTypes } from "sequelize";
-import db from "../sequelize-helper";
+import db from "@/db/sequelize-db";
 import { unique } from "next/dist/build/utils";
 
 export const Blog = db.define("Blog",{

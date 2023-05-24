@@ -14,7 +14,7 @@ export default function Home() {
         <h4 className='text-xl font-bold mt-12'>The site is still under construction, we will be right back!</h4>
         <h4 className='text-xl font-bold'>In the meantime, click here for our lesson:</h4>
         <Link href="https://bit.ly/atriscom4">
-          <ExButton buttonType={ButtonType.DEFAULT} extraClassName='animate-bg-color text-white font-extrabold'>
+          <ExButton buttontype={ButtonType.DEFAULT} extraclassname='animate-bg-color text-white font-extrabold'>
             Click Here
           </ExButton>
         </Link>

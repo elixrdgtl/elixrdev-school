@@ -3,14 +3,23 @@
 import ExButton, { ButtonType } from "@/components/basic-ui/button";
 import ExPanel from "@/components/basic-ui/panel";
 import { Formik, Form, Field } from "formik";
-import { IRegisterValues } from "@/db/models/user";
+import { IUser } from "@/db/models/generic/d.user";
+import { insertUser } from "@/db/models/firebase/user";
+import { useEffect } from "react";
 
 export default function Register() {
 
-    const init: Partial<IRegisterValues> = {}
+    const init: Partial<IUser> = {}
     const fieldClass = "p-2 mt-2 rounded-2xl border-0"
     const fieldGroup = "flex flex-col ml-1 mt-2"
     const fieldLabel = "mr-2"
+
+    useEffect(() => {
+        insertUser().then(() => {
+          console.log("inserted")
+        });
+    },[])
+
 
     return (
         <div>
