@@ -3,8 +3,7 @@
 import ExButton, { ButtonType } from "@/components/basic-ui/button";
 import ExPanel from "@/components/basic-ui/panel";
 import { Formik, Form, Field } from "formik";
-import { IUser } from "@/db/models/generic/d.user";
-import { insertUser } from "@/db/models/firebase/user";
+import { User, IUser } from "@/db/models/firebase/user";
 import { useEffect } from "react";
 
 export default function Register() {
@@ -19,7 +18,6 @@ export default function Register() {
           console.log("inserted")
         });
     },[])
-
 
     return (
         <div>
