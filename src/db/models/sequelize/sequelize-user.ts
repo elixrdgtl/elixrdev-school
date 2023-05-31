@@ -1,13 +1,5 @@
-import db from "@/db/sequelize-helper"
+import db from "@/db/sequelize-db"
 import { Model, Sequelize, DataTypes } from "sequelize"
-
-export interface IRegisterValues {
-    username: string,
-    email?: string
-    password: string,
-    name: string,
-    misc: any
-}
 
 export const User = db.define("User",{
     username: {

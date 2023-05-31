@@ -9,7 +9,7 @@ export enum ButtonType {
 export interface ButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>{
     children?:React.ReactNode,
     buttontype:ButtonType,
-    extraClassName?:string
+    extraclassname?:string
 }
 
 export default function ExButton(props:ButtonProps){
@@ -19,6 +19,6 @@ export default function ExButton(props:ButtonProps){
         2:"bg-red-500 hover:bg-red-600 text-white"
     }
     return(
-        <button className={`transition w-fit h-10 p-2 px-4 mt-2 mx-0.5 rounded-2xl active:translate-y-1 ${type[props.buttontype]} ${props.extraClassName}`} {...props}>{props.children}</button>
+        <button className={`transition w-fit h-10 p-2 px-4 mt-2 mx-0.5 rounded-2xl active:translate-y-1 ${type[props.buttontype]} ${props.extraclassname}`} {...props}>{props.children}</button>
     )
 }
