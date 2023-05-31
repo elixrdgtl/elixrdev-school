@@ -25,8 +25,8 @@ export default function HeaderMenu(P: HeaderMenu) {
                     {
                         [
                             {label:"Home",href:"/"},
-                            {label:"Register",href:"register"},
-                            {label:"Blog",href:"blog"},
+                            // {label:"Register",href:"register"},
+                            // {label:"Blog",href:"blog"},
                         ].map((item,key) => {
                           return(
                             <ExHeaderItem key={key} item={item.label} href={item.href}/>

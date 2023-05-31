@@ -13,12 +13,6 @@ export default function Register() {
     const fieldGroup = "flex flex-col ml-1 mt-2"
     const fieldLabel = "mr-2"
 
-    useEffect(() => {
-        insertUser().then(() => {
-          console.log("inserted")
-        });
-    },[])
-
     return (
         <div>
             <div className="flex w-full justify-center items-center">

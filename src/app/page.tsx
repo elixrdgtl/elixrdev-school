@@ -9,12 +9,10 @@ export default function Home() {
   const [showDialog, setShowDialog] = useState(false);
   return (
     <div className='h-screen -mt-24 flex flex-col justify-center items-center'>
-      <div className='w-2/3 flex flex-col justify-center items-center'>
-        <h1 className='text-8xl font-extrabold'>Welcome to Computer 4!</h1>
-        <h4 className='text-xl font-bold mt-12'>The site is still under construction, we will be right back!</h4>
-        <h4 className='text-xl font-bold'>In the meantime, click here for our lesson:</h4>
-        <Link href="https://bit.ly/atriscom4">
-          <ExButton buttontype={ButtonType.DEFAULT} extraclassname='animate-bg-color text-white font-extrabold'>
+      <div className='w-2/3 flex flex-col'>
+        <h1 className='text-9xl font-extrabold'>Welcome to Computer 4!</h1>
+        <Link href="https://bit.ly/elixrdev">
+          <ExButton buttontype={ButtonType.OK} extraclassname='font-extrabold text-4xl h-fit'>
             Click Here
           </ExButton>
         </Link>
