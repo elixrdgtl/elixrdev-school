@@ -12,7 +12,7 @@ export interface HeaderMenu {
 export default function HeaderMenu(P: HeaderMenu) {
     return (
         <div className={`
-            transition transform fixed top-0 bg-gray-300 drop-shadow-xl w-72 h-screen
+            transition transform fixed top-0 bg-black/50 drop-shadow-xl w-72 h-screen backdrop-blur-lg
             ${P.show ? "" : "-translate-x-72"}
         `}>
             <div className="p-4">

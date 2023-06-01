@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className='h-screen -mt-24 flex flex-col justify-center items-center'>
       <div className='w-2/3 flex flex-col'>
-        <h1 className='text-9xl font-extrabold'>Welcome to Computer 4!</h1>
+        <h1 className='text-9xl font-extrabold'>elixr</h1>
         <Link href="https://bit.ly/elixrdev">
           <ExButton buttontype={ButtonType.OK} extraclassname='font-extrabold text-4xl h-fit'>
             Click Here
