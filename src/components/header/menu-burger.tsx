@@ -7,7 +7,7 @@ export interface MenuBurger {
 
 export default function MenuBurger(P:MenuBurger) {
     return (
-        <ExButton buttontype={ButtonType.DEFAULT} extraclassname="bg-black/50 hover:bg-white hover:text-black" onClick={P.onClick}>
+        <ExButton buttontype={ButtonType.DEFAULT} extraclassname="bg-gray-800 hover:bg-gray-900" onClick={P.onClick}>
             = Menu
         </ExButton>
     )
