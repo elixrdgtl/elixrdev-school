@@ -21,7 +21,7 @@ export default function Home() {
                 { title: "Lesson 2: Software", link: "https://www.canva.com/design/DAFCt9KGmyU/2h8W1HDEvTxwHXUaFO3eQg/view", children: <>Applications and programs that is run by the computer: software.</> },
               ].map((val, key) => {
                 return (
-                  <Card title={val.title} key={key}>
+                  <Card title={val.title} key={key} link={val.link}>
                     {val.children}
                   </Card>
                 )
